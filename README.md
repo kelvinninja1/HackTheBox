@@ -1,2 +1,2 @@
 # HackTheBox
-HackTheBox writeups
+HackTheBox writeups protected by root flag.
