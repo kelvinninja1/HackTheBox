@@ -63,7 +63,7 @@ local function start_request1() -- GET initial content
 	end
 end
 
-p("Starting request to " .. "http://10.10.10.129/encrypt.php?cipher=RC4&url=" .. qrystring.urlencode(file_to_request))
+p("Starting request to http://10.10.10.129/encrypt.php?cipher=RC4&url=" .. file_to_request)
 coroutine.wrap(function()
 	start_request1()
 end)()
