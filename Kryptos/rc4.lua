@@ -47,7 +47,7 @@ local function start_request1() -- GET initial content
 		local initial_base_decoded = base64.decode(initial_base)
 
 		print("Request sent.")
-		print("Initial base64 found: \nDECODED -> " .. initial_base_decoded)
+		print("Initial base64 found")
 		print("Writing decoded output to rc4_encrypted_temp.txt")
 
 		local file = io.open("rc4_encrypted_temp.txt", "w")
