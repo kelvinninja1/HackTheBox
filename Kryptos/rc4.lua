@@ -24,10 +24,10 @@ local function start_request2() -- Send back the encrypted output to receive ini
 		local final_base_decoded = base64.decode(final_base)
 		print("Request sent.")
 		print("Final base64 found: \nDECODED -> " .. final_base_decoded)
-		print("Writing decoded output to rc4_decrypted.txt")
+		print("Writing decoded output to rc4_decrypted.html")
 		
 		os.remove("./rc4_encrypted_temp.txt")
-		local file = io.open("rc4_decrypted.txt", "w")
+		local file = io.open("rc4_decrypted.html", "w")
 
 		file:write(final_base_decoded)
 		file:flush()
