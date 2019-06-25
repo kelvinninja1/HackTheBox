@@ -7,9 +7,8 @@ local http = require("coro-http")
 local base64 = require("base64")
 local qrystring = require("querystring.lua")
 
-if not args[2] then return print("No destination found.\n./luvit rc4.lua http://file_to_request.htb/file") end
+if not args[2] then return print("No destination found.\n./luvit rc4.lua http://file_to_request.htb/file 10.10.14.12:80") end
 if not args[3] then return print("No LHOST[:HPORT] found.\n./luvit rc4.lua http://file_to_request.htb/file 10.10.14.12:80") end
-p(args)
 
 
 local file_to_request = args[2]
