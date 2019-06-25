@@ -24,7 +24,7 @@ local function start_request2() -- Send back the encrypted output to receive ini
 		local final_base = body:match("output\"%>([%w=+/]+)")
 		local final_base_decoded = base64.decode(final_base)
 		print("Request sent.")
-		print("Final base64 found: " .. final_base .. "\nDECODED -> " .. final_base_decoded)
+		print("Final base64 found: \nDECODED -> " .. final_base_decoded)
 		print("Writing decoded output to rc4_decrypted.txt")
 		
 		os.remove("./rc4_encrypted_temp.txt")
@@ -48,7 +48,7 @@ local function start_request1() -- GET initial content
 		local initial_base_decoded = base64.decode(initial_base)
 
 		print("Request sent.")
-		print("Initial base64 found: " .. initial_base .. " \nDECODED -> " .. initial_base_decoded)
+		print("Initial base64 found: \nDECODED -> " .. initial_base_decoded)
 		print("Writing decoded output to rc4_encrypted_temp.txt")
 
 		local file = io.open("rc4_encrypted_temp.txt", "w")
